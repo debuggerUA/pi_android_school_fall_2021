@@ -1,16 +1,18 @@
-# Permissions & Location
+# Internal & external storage & camera
 
-* https://developer.android.com/guide/topics/permissions/overview всю секцию
-* https://developer.android.com/training/location
+https://developer.android.com/training/data-storage/files.html
+https://developer.android.com/training/camera
+https://github.com/Yalantis/uCrop
 
 ### Задания и codelabs
 
-* https://codelabs.developers.google.com/codelabs/advanced-android-training-device-location/index.html?index=..%2F..advanced-android-training#0
-* https://codelabs.developers.google.com/codelabs/advanced-android-training-places-api/index.html?index=..%2F..advanced-android-training#0
-* https://codelabs.developers.google.com/codelabs/advanced-android-training-google-maps/index.html?index=..%2F..advanced-android-training#0
-
-Работаем на основе приложения с прошлой недели:
-* Добавляем отдельный экран с картой Google Maps
-* По умолчанию пытаемся показать и отметить на карте текущее местоположение пользователя
-* Пользователь может тапом выбрать на карте любое другое место
-* Если место выбрано - по нажатию кнопки на экране он может получить фид фоточек с Flickr с заданной локации на карте. Wokrflow примерно такой: попадаем на экран с картой, выбираем местоположение (или оставляем текущее определенное), жмем на кнопку "Найти фотографии" и попадаем на другой экран где будут выведены фоточки в список
+https://codelabs.developers.google.com/codelabs/android-storage-permissions/#0
+* Работаем на основании приложения с прошлой недели:
+* Добавляем возможность просмотреть экран с галереей из собственных фотографий
+* Необходимо завести отдельную папку на телефоне, куда ваше приложение будет сохранять фотографии сделанные пользователем
+* Когда пользователь попадает на этот экран нужно отображать фотографии в списке подобно тому как мы это делаем на остальных экранах
+* Если пользователь будет свайпать фотографию на этом экране то в таком случае мы удаляем фотографию
+* После того как пользователь сделает фотографию предлагаем ее обработать с помощью библиотеки uCrop
+* После обработки сохраняем полученный результат и отображаем как новый элемент списка
+* Так же добавляем возможность скачать фотографию на файловую систему при просмотре фулл скрин фоточки из фликера - отображать ее будем в том же списке что и другие фотографии на файловой системе
+* Фотографии сделанные из приложения с камеры пользователя сохранять в приватное хранилище, фотографии из фликера загружать в какую-то папку в общем хранилище
