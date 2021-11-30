@@ -1,18 +1,27 @@
-# Internal & external storage & camera
+# Resources and styling
 
-https://developer.android.com/training/data-storage/files.html
-https://developer.android.com/training/camera
-https://github.com/Yalantis/uCrop
+* https://developer.android.com/guide/topics/ui/look-and-feel?hl=en - всю секцию
+* https://guides.codepath.com/android/Styles-and-Themes
+* https://www.vogella.com/tutorials/AndroidStylesThemes/article.html
+  
+* https://developer.android.com/guide/topics/resources/available-resources - вся секция
+* https://material.io/
+* https://material.io/design/color/dark-theme.html#properties
+* https://material.io/tools/build-a-material-theme/#how-to-using-android-studio
 
 ### Задания и codelabs
+  
+https://material.io/resources/tutorials#android-kotlin все в секции
+https://codelabs.developers.google.com/codelabs/android-training-drawables-styles-and-themes/index.html?index=..%2F..android-training#0
 
-https://codelabs.developers.google.com/codelabs/android-storage-permissions/#0
-* Работаем на основании приложения с прошлой недели:
-* Добавляем возможность просмотреть экран с галереей из собственных фотографий
-* Необходимо завести отдельную папку на телефоне, куда ваше приложение будет сохранять фотографии сделанные пользователем
-* Когда пользователь попадает на этот экран нужно отображать фотографии в списке подобно тому как мы это делаем на остальных экранах
-* Если пользователь будет свайпать фотографию на этом экране то в таком случае мы удаляем фотографию
-* После того как пользователь сделает фотографию предлагаем ее обработать с помощью библиотеки uCrop
-* После обработки сохраняем полученный результат и отображаем как новый элемент списка
-* Так же добавляем возможность скачать фотографию на файловую систему при просмотре фулл скрин фоточки из фликера - отображать ее будем в том же списке что и другие фотографии на файловой системе
-* Фотографии сделанные из приложения с камеры пользователя сохранять в приватное хранилище, фотографии из фликера загружать в какую-то папку в общем хранилище
+Работаем на основане приложения с прошлой недели:
+* Стилизуем приложение в Material стиле.
+* Если у нас есть вью, которое переиспользуется на разных экранах - пишем единый стиль для такой вью (например для стандартной кнопки)
+* То же самое для всех размеров, шрифтов, цветов
+* Advanced - внедряем light\dark\auto тему и добавляем возможность переключения между ними
+
+
+
+
+
+
